@@ -1,0 +1,58 @@
+.imageElement{
+  
+  
+  }
+  .imageElement.imageElement--carousel{
+   
+    border-radius: 19%;
+    background-color: #303030;
+  }
+  .paginationDot{
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .paginationDot.paginationDot--isActive{
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: #59ff00;
+  }
+  .paginationDotsContainer{
+     bottom: -50px;
+  }
+  .caretIcon{
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+    cursor: pointer;
+  }
+  .sliderRightArrow.sliderArrows{
+    color: #fff;
+    bottom: -50px;
+    padding-right: 250px;
+  }
+  .sliderLeftArrow.sliderArrows{
+    color:#fff;
+    bottom: -50px;
+    padding-left: 250px;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    text-transform: uppercase;
+  
+  }
+  .slideChildrenContainer.slideChildrenContainer--carousel{
+    background-color: #303030;
+  }

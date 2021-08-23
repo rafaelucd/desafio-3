@@ -1,0 +1,46 @@
+.searchBarContainer{
+    padding-right: 286px; 
+}
+.container{
+  margin-top: 10px;
+  background-color: #212121;
+}
+.imageElement{
+    height: 312px;
+    width: 900px;
+  }
+  .imageElement.imageElement--carousel{
+      width: 100%;
+      cursor: pointer;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      border-radius: 20px;
+  }
+  .sellingPrice.sellingPriceValue{
+    color: #59ff00; 
+  }
+   .swiper-pagination.swiperPaginationClickable{
+     margin-bottom: -5px;
+  }
+  .swiperCaret.swiperCareNext{
+    margin-bottom: -100px;
+  }
+  .caretIcon{
+   
+    color: #59ff00
+
+  }
+  .infoCardContainer{
+    margin-top: 50px;
+  }
+  .infoCardCallActionContainer{
+    margin-right: 280px;
+  }
+  .swiperBullet.swiperBullet--active{
+    color: #59ff00;
+  }
+  .swiperBullet{
+    color: #fff;
+  }
+  

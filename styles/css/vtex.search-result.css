@@ -1,0 +1,14 @@
+.searchResultContainer{
+    justify-content: center;
+    width: 70%;
+    flex-grow: 0;
+    flex-basis: 70%;
+    margin-top: 100px;
+}
+.gallery{
+    color: #fff;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.gallery.gallery--grid{
+    background-color:#303030;
+}

@@ -1,0 +1,12 @@
+.flexCol{  
+    background:#212121;
+}
+.flexRowContent{  
+    background:#212121;
+}
+.flexRowContent--main-header{
+    background:#212121;
+}
+.flexRowContent.flexRowContent--menu-row{
+    margin-left: 400px;
+}

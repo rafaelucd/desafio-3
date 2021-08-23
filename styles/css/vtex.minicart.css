@@ -1,0 +1,6 @@
+.container{
+    padding-right: 180px;
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+}

@@ -1,0 +1,15 @@
+.headerRowContainer{
+    padding-bottom: 2px;
+    color: #fff;
+    background-color: #212121; 
+    min-height: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    position: relative;
+    align-items: center; 
+}
+.headerStickyRow,
+.headerRowContentContainer{
+    background-color: #212121; 
+}
