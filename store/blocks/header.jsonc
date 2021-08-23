@@ -1,0 +1,202 @@
+{
+  "header": {
+    "blocks": ["telemarketing", "logo","vtex.menu@2.x:menu#websites"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": ["header-row#desktop-1", "header-row#desktop-2","header-row#desktop-3"]
+  },
+ 
+  "header-row#desktop-1": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "header-row#desktop-2": {
+    "children": [
+      "logo",
+      "header-spacer",
+      "search-bar",
+      "minicart"
+    ],
+    "props": {
+      "sticky": true
+    }
+  },
+  "header-row#desktop-3": {
+    "children": [
+      "vtex.menu@2.x:menu#websites"
+    ]
+  },
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#item1",
+      "menu-item#item2",
+      "menu-item#item3",
+      "menu-item#item4",
+      "menu-item#item5",
+      "menu-item#item6",
+      "menu-item#item7",
+      "menu-item#item8" 
+    ]
+  },
+
+  "menu-item#item1": {
+    "props": {
+      "id": "menu-item-item1",
+      "type": "custom",
+      "highlight": false,
+      "defaultActiveTab": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "PROMOÇÃO",
+        "text": "PROMOÇÃO"
+      }  
+    }
+  },
+  "menu-item#item2": {
+    "props": {
+      "id": "menu-item-item2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "CORINTHIAS",
+        "text": "CORINTHIAS"
+      }  
+    }
+  },
+  "menu-item#item3": {
+    "props": {
+      "id": "menu-item-item3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "PALMEIRAS",
+        "text": "PALMEIRAS"
+      }  
+    }
+  },
+  "menu-item#item4": {
+    "props": {
+      "id": "menu-item-item4",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "SIGNO",
+        "text": "SIGNO"
+      }  
+    }
+  },
+  "menu-item#item5": {
+    "props": {
+      "id": "menu-item-item5",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "DIVERTIDOS",
+        "text": "DIVERTIDOS"
+      }  
+    }
+  },
+  "menu-item#item6": {
+    "props": {
+      "id": "menu-item-item6",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "7MARAVILHA",
+        "text": "7MARAVILHA"
+      }  
+    }
+  },
+  "menu-item#item7": {
+    "props": {
+      "id": "menu-item-item7",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "GUERREIROS",
+        "text": "GUERREIROS"
+      }  
+    }
+  },
+  "menu-item#item8": {
+    "props": {
+      "id": "menu-item-item8",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "ÁLBUM1",
+        "text": "ÁLBUM1"
+      }  
+    }
+  },
+
+  "header-layout.mobile": {
+    "children": ["header-row#mobile-2"]
+  },
+  "header-row#mobile-1": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true,
+      "sticky": true
+    }
+  },
+  "header-row#mobile-2": {
+    "children": [
+      "logo",
+      "header-spacer",
+      "minicart"
+    ],
+    "props": {
+      "sticky": true
+    }
+  },
+ 
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "width": "150"
+  }
+},
+"minicart": {
+  "blocks": [
+    "product-summary"
+  ],
+  "props": {
+    "type": "popup",
+    "showDiscount": true,
+    "labelMiniCartEmpty": "",
+    "labelButtonFinishShopping": "Ir para o checkout"
+  }
+}
+
+}

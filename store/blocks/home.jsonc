@@ -1,0 +1,185 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      "info-card",
+      "rich-text#1",
+      "search-result-layout.customQuery#home"
+    ]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T072314Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=51203beba63c988b0f56a1322787d3e84ac67cb3669db3f245fe0e409fae53f8",
+          "mobileImage": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T072314Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=51203beba63c988b0f56a1322787d3e84ac67cb3669db3f245fe0e409fae53f8"
+        },
+        {
+          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T072314Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=c291119af1e7d5530d165b59ba9ef115c10396c55ab1f5ed8a125f424dd57a62",
+          "mobileImage": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T072314Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=c291119af1e7d5530d165b59ba9ef115c10396c55ab1f5ed8a125f424dd57a62"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  "rich-text#1":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "você está vendo provas de",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+     
+    }
+  },
+  "info-card":{
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "callToActionMode": "button",
+      "callToActionText": "Corrida",
+      "textAlignment": "center"
+    }
+  },
+
+  "search-result-layout.customQuery#home": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10 
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#lp",
+      "search-result-layout.mobile"
+    ]
+  },
+  "search-result-layout.desktop#lp": {
+    "children": [
+     
+      "search-content#lp"
+     
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+  "search-content#lp": { 
+    "blocks": 
+      ["gallery", "not-found"]
+  },
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name":"grid",
+          "component":"GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 2,
+            "desktop": 2,
+            "tablet": 2,
+            "phone": 1
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#lp",
+      "GridSummary": "product-summary.shelf#lp"
+    }
+  },
+  "product-summary.shelf#lp": {
+    "children": [
+      "modal-trigger#lp",
+      "product-summary-name",
+      "product-images#lp",
+      "vtex.product-highlights@2.x:product-highlights#1",
+      "vtex.product-highlights@2.x:product-highlights#1",
+      "product-summary-price",
+      "add-to-cart-button#lp"
+    ],
+    "props":{
+      "blockClass":[
+        "Click me"
+      ]
+    }
+  },
+  "product-images#lp": {
+    "props": {
+      "displayThumbnailsArrows":true,
+      "showNavigationArrows": true,
+      "showPaginationDots":true
+     
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights#1": {
+    "children": ["product-highlight-text#1"]
+  },
+  "product-highlight-text#1": {
+    "props": {
+      "message": "{highlightName}",
+      "link": "/collection/{highlightId}"
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights#2": {
+    "children": ["product-highlight-text#2"]
+  },
+  "product-highlight-text#2": {
+    "props": {
+      "message": "{highlightName}",
+      "link": "/collection/{highlightId}"
+    }
+  },
+  "add-to-cart-button#lp":{
+    "props": {
+      "onClickBehavior":"go-to-product-page",
+      "text":"Ver detalhes"
+    }
+  },
+  "modal-trigger#lp":{
+    "children": [
+      "rich-text#lp",
+      "modal-layout#lp"
+    ]
+  },
+  "rich-text#lp": {
+    "props": {
+      "text": "Click me"
+    }
+  },
+  "modal-layout#lp": {
+    "children": [
+      "video#lp"
+    ]
+  },
+  "video#lp": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": false,
+      "autoPlay": true,
+      "muted": false,
+      "src": "https://youtu.be/vVNF4OASRDI",
+      "blockClass": "videoEl"
+    }
+  }
+
+}
